@@ -2,6 +2,10 @@ package com.entelgy.challenge.Animales.Modelos;
 
 import com.entelgy.challenge.Animales.HaceSonido;
 
+/**
+ * Clase abstracta que representa a un animal.<br>
+ * Puede realizar un sonido al implementar la interfaz {@link HaceSonido}.
+ */
 public abstract class Animal implements HaceSonido {
 
 	public String nombre;
@@ -11,6 +15,11 @@ public abstract class Animal implements HaceSonido {
 	public final String sonido;
 	public final String tipo;
 	
+	/**
+	 * Constructor para un animal genérico.
+	 * @param tipo El tipo de animal que es.
+	 * @param sonido El sonido que realiza.
+	 */
 	public Animal(String tipo, String sonido) {
 		this.tipo = tipo;
 		this.sonido = sonido;

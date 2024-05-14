@@ -40,6 +40,7 @@ public class Reporte {
 		
 	}
 	
+	// Función para cargar datos iniciales de los animales.
 	private static void cargar_datos() {
 		animales = new Animal[] {
 			new Perro("perro1", "2 años 3 meses", "raza1", "10 a 15"),
